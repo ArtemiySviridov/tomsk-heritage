@@ -1,0 +1,60 @@
+.route-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid var(--color-gray-05);
+  padding: 8px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 2px var(--color-gray-09);
+  width: 100%;
+  max-width: 1200px;
+  text-decoration: none;
+  color: var(--color-black );
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 4px 4px var(--color-gray-08);
+    border: 2px solid var(--color-green-02);
+    background-color: var(--color-green-01);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__size {
+      font-size: 20px;
+    }
+
+    &__rating {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+
+  &__photos {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+
+    &__photo {
+      width: 143px;
+      height: 143px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--color-gray-03);
+    }
+  }
+}

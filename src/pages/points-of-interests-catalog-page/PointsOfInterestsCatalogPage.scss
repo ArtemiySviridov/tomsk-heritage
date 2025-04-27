@@ -1,0 +1,25 @@
+.points-of-interests-catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 140px;
+  font-size: 24px;
+
+  &__header {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__points-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.default-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-about-proj-font);
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  &__body {
+    flex-grow: 1;
+  }
+
+  &__footer {
+    background-color: var(--color-about-proj-font);
+    height: 80px;
+  }
+}

@@ -1,0 +1,24 @@
+.button-component {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-orange-01);
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid var(--color-orange-01);
+  padding: 5px 0;
+  font-size: 20px;
+  transition: all 0.5s ease;
+  background-color: var(--color-about-proj-font);
+
+  &:hover {
+    background-color: var(--color-orange-01);
+    color: var(--color-white);
+    border: 1px solid var(--color-orange-);
+  }
+
+  &:focus {
+    background-color: var(--color-orange-01);
+  }
+}

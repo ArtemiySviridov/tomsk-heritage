@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather-Regular";
+  font-weight: 400; // Regular версия Merriweather
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/Merriweather-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2");
+}

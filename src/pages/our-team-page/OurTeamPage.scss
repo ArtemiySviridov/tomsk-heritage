@@ -1,0 +1,23 @@
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 75px;
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &__members-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+}

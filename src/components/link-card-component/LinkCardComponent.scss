@@ -1,0 +1,41 @@
+.link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid var(--color-orange-01);
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 2px var(--color-gray-09);
+  text-decoration: none;
+  color: var(--color-brown-01);
+  width: 100%; /* Заставляет карточку занимать всю ширину контейнера */
+  max-width: 350px; /* Уменьшите, если хотите более узкие карточки */
+  box-sizing: border-box;
+  height: 100%;
+  background-color: var(--color-orange-02);
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 4px 4px var(--color-gray-08);
+    border: 2px solid var(--color-green-02);
+    background-color: var(--color-green-01);
+  }
+
+  &__photo {
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-gray-05);
+    border-radius: 8px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-gray-07);
+    padding: 5px 5px 10px;
+  }
+}

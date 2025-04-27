@@ -1,0 +1,19 @@
+@import "variables";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color-brown-01)
+}
+
+html, body {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Inter, sans-serif;
+  background-color: var(--color-about-proj-font);
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,113 @@
+.about-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 70px 0 0 0;
+      height: 400px;
+      background: var(--color-gray-06);
+      background-image: url("../../assets/photos/AboutProjectPhoto.png"); /* Путь к изображению */
+      background-size: cover; /* Изображение покрывает всю секцию */
+      background-position: center; /* Центрируем изображение */
+      background-repeat: no-repeat;
+
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 246, 236, 0.47); /* Полупрозрачный чёрный слой */
+        z-index: 1;
+      }
+      &__title,
+      &__description {
+        position: relative;
+        z-index: 2;
+        color: var(--color-brown-02)/* Текст выше оверлея */
+      }
+
+      &__title {
+        font-family: Merriweather-Regular, serif;
+        font-size: 44px;
+        font-weight: 700;
+        padding: 50px;
+        text-align: center;
+      }
+      &__description {
+        font-family: Merriweather-Regular, serif;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        align-self: flex-start;
+        padding: 50px 0 0 150px
+      }
+    }
+
+    &__information {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      font-size: 24px;
+      font-family: OpenSans-Regular, sans-serif;
+      line-height: 50px;
+      padding: 50px 105px;
+
+      &__tomsk-text {
+        display: block;
+        .tomsk {
+          font-family: Merriweather-Regular, serif;
+          font-size: 26px;
+          font-weight: 600;
+        }
+      }
+
+      &__our-mission {
+        &__header {
+          font-family: Merriweather-Regular, serif;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        &__content {
+          padding: 0 0 0 15px;
+
+          &__string {
+            display: block;
+            .star0 {
+              color: var(--color-orange-01);
+              font-size: 28px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      &__services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        &__title {
+          font-family: Merriweather-Regular, serif;
+          font-size: 28px;
+          font-weight: 600;
+        }
+        &__services-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 100px;
+        }
+      }
+    }
+  }
+}

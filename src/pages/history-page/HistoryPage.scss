@@ -1,0 +1,26 @@
+.history-page {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 130px;
+  color: var(--color-gray-07);
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    color: var(--color-gray-07);
+  }
+}
