@@ -12,6 +12,7 @@
   }
 
   &__title {
+    font-family: Merriweather-Regular, serif;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
@@ -21,6 +22,26 @@
     font-size: 20px;
     line-height: 40px;
     font-weight: 400;
+    font-family: OpenSans-Regular, sans-serif;
     color: var(--color-gray-07);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .history-page {
+    padding: 20px 20px 0 20px;
+
+    &__info {
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 }

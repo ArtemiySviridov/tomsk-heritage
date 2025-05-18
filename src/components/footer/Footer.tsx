@@ -3,7 +3,7 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <div className="footer">
-      Что-то тут точно будет
+      «Город — это не только стены, но и люди, которые их помнят»
     </div>
   )
 }

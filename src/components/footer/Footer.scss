@@ -1,12 +1,20 @@
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-radius: 8px 8px 0 0;
   height: 100%;
+  font-family: Merriweather-Regular, serif;
   margin: 20px 20px 0 20px;
   border-bottom: none;
   color: var(--color-gray-02);
-  font-size: 24px;
+  font-size: 18px;
   background-color: var(--color-orange-02);
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 14px;
+    text-align: center;
+  }
 }

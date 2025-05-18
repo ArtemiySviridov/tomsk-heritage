@@ -19,7 +19,7 @@ const LinkPointPage = () => {
         { link.title }
       </div>
       <div className="link-point__photo">
-        { link.photo }
+        <img src={link.photo} alt="Фото ссылки" className="link-point__photo__img" />
       </div>
 
       <div className="link-point__info">

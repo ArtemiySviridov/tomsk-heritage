@@ -1,5 +1,5 @@
 .history-layout {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -87,4 +87,22 @@
     font-size: 18px;
     white-space: nowrap;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .history-layout {
+    &__header {
+      height: 55px;
+    }
+    &__body {
+      margin-bottom: 0;
+    }
+  }
+
+ .timeline {
+   padding: 15px 0;
+   &__year {
+     display: none;
+   }
+ }
 }

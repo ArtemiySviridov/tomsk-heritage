@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 25px;
-  border: 2px solid var(--color-gray-05);
+  border: 2px solid var(--color-orange-01);
   padding: 8px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -12,7 +12,8 @@
   width: 100%;
   max-width: 1200px;
   text-decoration: none;
-  color: var(--color-black );
+  color: var(--color-brown-01 );
+  background-color: var(--color-orange-02);
 
   &:hover {
     transform: scale(1.01);
@@ -28,8 +29,9 @@
     gap: 20px;
 
     &__title {
+      font-family: Merriweather-Regular, serif;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     &__size {
@@ -55,6 +57,30 @@
       border: none;
       border-radius: 8px;
       background-color: var(--color-gray-03);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .route-card {
+    padding: 0;
+    border-radius: 8px;
+    &__info {
+      gap: 5px;
+      padding: 15px;
+      &__title {
+        font-size: 20px;
+      }
+      &__size {
+        font-size: 16px;
+      }
+      &__rating {
+        gap: 5px;
+      }
+    }
+
+    &__photos {
+      display: none;
     }
   }
 }

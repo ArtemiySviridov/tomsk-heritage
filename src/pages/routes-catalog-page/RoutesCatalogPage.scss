@@ -5,6 +5,7 @@
   gap: 50px;
 
   &__title {
+    font-family: Merriweather-Regular, serif;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -15,5 +16,20 @@
     flex-direction: column;
     gap: 30px;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .routes-catalog {
+    padding: 20px 20px 0 20px;
+    gap: 30px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__list {
+      gap: 20px;
+    }
   }
 }

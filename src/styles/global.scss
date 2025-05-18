@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: var(--color-brown-01)
 }
 
 html, body {
@@ -12,6 +11,10 @@ html, body {
   -webkit-tap-highlight-color: transparent;
   font-family: Inter, sans-serif;
   background-color: var(--color-about-proj-font);
+}
+
+body {
+  color: var(--color-brown-01);
 }
 
 html {

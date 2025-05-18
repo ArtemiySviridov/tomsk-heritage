@@ -7,17 +7,47 @@
   padding: 50px 75px;
 
   &__title {
-    font-size: 36px;
+    font-family: Merriweather-Regular, serif;
+    font-weight: 700;
+    font-size: 44px;
+    text-align: center;
   }
 
   &__subtitle {
+    font-family: OpenSans-Regular, sans-serif;
     text-align: center;
     font-size: 20px;
+
+    &__span {
+      font-family: Merriweather-Regular, serif;
+      font-weight: 600;
+    }
   }
 
   &__members-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-team {
+    padding: 20px 20px 0 20px;
+    gap: 40px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__members-list {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+      row-gap: 10px;
+    }
   }
 }

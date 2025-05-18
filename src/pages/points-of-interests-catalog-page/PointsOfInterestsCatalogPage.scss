@@ -6,20 +6,40 @@
   font-size: 24px;
 
   &__header {
+    font-family: Merriweather-Regular, serif;
     font-size: 32px;
     font-weight: 700;
     text-align: center;
   }
   &__points-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 30px;
     row-gap: 50px;
+
 
     &__link {
       text-decoration: none;
+      color: var(--color-brown-01)
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .points-of-interests-catalog {
+    padding: 20px 20px 0 20px;
+    gap: 30px;
+
+    &__header {
+      font-size: 30px;
+    }
+
+    &__points-list {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
     }
   }
 }

@@ -19,6 +19,7 @@
     display: flex;
     gap: 50px;
     justify-content: space-between;
+    border-bottom: 2px solid var(--color-orange-01);
     &__link {
       display: flex;
       align-items: center;
@@ -43,5 +44,16 @@
 
   &__profile {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    &__nav {
+      gap: 40px;
+      &__link {
+        padding: 0;
+      }
+    }
   }
 }

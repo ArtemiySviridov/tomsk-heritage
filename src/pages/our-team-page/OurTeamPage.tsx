@@ -8,12 +8,12 @@ const OurTeamPage = () => {
         Наша команда
       </div>
       <div className="our-team__subtitle">
-        Мы — студенты ТГУ и ТПУ, объединившиеся, чтобы сохранить архитектурное наследие Томска в цифровом формате
+        <span className="our-team__subtitle__span">Мы</span> — студенты ТГУ и ТПУ, объединившиеся, чтобы сохранить архитектурное наследие Томска в цифровом формате
       </div>
       <div className="our-team__members-list">
         <TeamMemberCardComponent teamMember="Ksenia" subtitle="Системный аналитик" title="Платонова Ксения" description="Продумывает, как должна работать платформа, и делает её понятной и удобной для пользователей" />
-        <TeamMemberCardComponent teamMember="Daniil" subtitle="Дизайнер" title="Бехтольд Даниил" description="Отвечает за визуальный стиль и удобство платформы" />
-        <TeamMemberCardComponent teamMember="Varvara" subtitle="Контентмейкер" title="Кузнецова Варвара" description="Ищет, анализирует и оформляет исторические материалы" />
+        <TeamMemberCardComponent teamMember="Daniil" subtitle="Контентмейкер" title="Бехтольд Даниил" description="Ищет, анализирует и оформляет исторические материалы" />
+        <TeamMemberCardComponent teamMember="Varvara" subtitle="Дизайнер" title="Кузнецова Варвара" description="Отвечает за визуальный стиль и удобство платформы" />
         <TeamMemberCardComponent teamMember="Artemiy" subtitle="Frontend-разработчик" title="Свиридов Артемий" description="Реализует функциональность платформы, превращая идеи в работающий продукт" />
       </div>
     </div>

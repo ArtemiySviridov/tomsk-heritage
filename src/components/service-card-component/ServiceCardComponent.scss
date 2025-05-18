@@ -3,12 +3,11 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  max-width: 330px;
-  height: 520px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
   padding: 10px;
   border-radius: 8px;
+  text-align: center;
 
   &:hover {
     border: 2px solid var(--color-green-02);
@@ -23,6 +22,7 @@
     align-items: center;
 
     &__title {
+      font-size: 22px;
       padding-top: 10px;
       font-family: Merriweather-Regular, serif;
       font-weight: 600;
@@ -32,8 +32,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
     }
 
     &__line {
@@ -45,7 +45,8 @@
     }
 
     &__description {
-      font-size: 20px;
+      font-size: 18px;
+      font-family: OpenSans-Regular, sans-serif;
       line-height: 40px;
       text-align: center;
       padding-bottom: 20px;
@@ -57,5 +58,24 @@
     margin-top: auto;
     width: 250px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-card {
+    &__info {
+      &__icon {
+        width: auto;
+        height: auto;
+      }
+      &__title {
+        font-size: 20px;
+      }
+      &__description {
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 0;
+      }
+    }
   }
 }

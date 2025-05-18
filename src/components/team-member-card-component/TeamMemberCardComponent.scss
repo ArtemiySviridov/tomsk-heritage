@@ -37,7 +37,11 @@
     }
 
     &__title {
-      font-size: 24px;
+      font-size: 20px;
+      font-family: Merriweather-Regular, serif;
+      font-weight: 600;
+      height: 40px;
+      text-align: center;
     }
 
     &__line {
@@ -48,8 +52,35 @@
     }
 
     &__description {
-      font-size: 20px;
+      font-family: OpenSans-Regular, sans-serif;
+      font-size: 16px;
       line-height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team-member-card {
+    &__info {
+      gap: 5px;
+      &__icon {
+        width: 100px;
+        height: 100px;
+
+        &__member {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &__title {
+        font-size: 16px;
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }

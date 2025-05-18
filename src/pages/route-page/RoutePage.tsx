@@ -25,7 +25,7 @@ const RoutePage = () => {
             Расстояние: {route.distance} км
           </div>
           <div className="route__header__info__duration">
-            Время прохождения: {route.duration} часа
+            Время прохождения: {route.duration}
           </div>
           <div className="route__header__info__rating">
             {[...Array(5)].map((_, index) => (

@@ -1,5 +1,31 @@
-import Before1 from '../assets/before-after-images/before1.jpg';
-import After1 from '../assets/before-after-images/after1.jpg';
+import Before1 from '../assets/before-after-images/before1.png';
+import After1 from '../assets/before-after-images/after1.png';
+
+import dzerzhinskogoBefore from '../assets/before-after-images/dzerzhinskogoBefore.png';
+import dzerzhinskogoAfter from '../assets/before-after-images/dzerzhinskogoAfter.png';
+import dzerzhinskogoHyperLink from '../assets/before-after-images/dzerzhinskogoHyperLink.png';
+import dzerzhinskogoHyperLink2 from '../assets/before-after-images/dzerzhinskogoHyperLink2.png';
+
+import frunzeBefore from '../assets/before-after-images/frunzeBefore.png';
+import frunzeAfter from '../assets/before-after-images/frunzeAfter.png';
+
+import gagarina50After from '../assets/before-after-images/gagarina50After.png';
+
+import gostinicaBefore from '../assets/before-after-images/gostinnicaBefore.png';
+import gostinicaAfter from '../assets/before-after-images/gostinnicaAfter.png';
+
+import sinagogaBefore from '../assets/before-after-images/sinagogaBefore.png';
+import sinagogaAfter from '../assets/before-after-images/sinagogaAfter.png';
+
+import sovetskayaBefore from '../assets/before-after-images/sovetskayaBefore.png';
+
+import voennoeBefore from '../assets/before-after-images/voennoeUchilicheBefore.png';
+import voennoeAfter from '../assets/before-after-images/voennoeUchilicheAfter.png';
+
+import DomStarcaBefore from '../assets/before-after-images/domStarcaBefore.png';
+import DomStarcaAfter from '../assets/before-after-images/domStarcaAfter.png';
+
+
 
 export interface PointOfInterest {
   id: number;
@@ -278,10 +304,10 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 2,
     title: "Солдатская синагога",
-    image: After1,
+    image: sinagogaAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: sinagogaBefore,
+      after: sinagogaAfter,
     },
     links: [],
     additionalInfo: [
@@ -336,10 +362,10 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 3,
     title: "Томский военно-медицинский институт",
-    image: After1,
+    image: voennoeAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: voennoeBefore,
+      after: voennoeAfter,
     },
     links: [],
     additionalInfo: [],
@@ -418,16 +444,16 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 4,
     title: "Дзержинского 12 (Дом где жил брат Менделеева)",
-    image: After1,
+    image: dzerzhinskogoAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: dzerzhinskogoBefore,
+      after: dzerzhinskogoAfter,
     },
     links: [
       {
         id: "1",
         title: "Преображенская церковь",
-        photo: '',
+        photo: dzerzhinskogoHyperLink2,
         info: [
           {
             subtitle: "Преображенская церковь",
@@ -439,7 +465,7 @@ export const pointsOfInterest: PointOfInterest[] = [
       {
         id: "2",
         title: "Профессорская слобода (Дзержинского 17)",
-        photo: '',
+        photo: dzerzhinskogoHyperLink,
         info: [
           {
             subtitle: "Профессорская слобода (Дзержинского 17)",
@@ -513,10 +539,10 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 5,
     title: "Фрунзе 10",
-    image: After1,
+    image: frunzeAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: frunzeBefore,
+      after: frunzeAfter,
     },
     links: [],
     additionalInfo: [
@@ -595,16 +621,16 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 6,
     title: 'Гостиница "Россия"',
-    image: After1,
+    image: gostinicaAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: gostinicaBefore,
+      after: gostinicaAfter,
     },
     links: [
       {
         id: "1",
         title: "Гагарина 50",
-        photo: '',
+        photo: gagarina50After,
         info: [
           {
             subtitle: "Гагарина 50",
@@ -616,7 +642,7 @@ export const pointsOfInterest: PointOfInterest[] = [
       {
         id: "2",
         title: "Советская 37а",
-        photo: '',
+        photo: sovetskayaBefore,
         info: [
           {
             subtitle: "Советская 37а",
@@ -664,10 +690,10 @@ export const pointsOfInterest: PointOfInterest[] = [
   {
     id: 7,
     title: "Дом Фёдора Кузьмича",
-    image: After1,
+    image: DomStarcaAfter,
     beforeAfterImages: {
-      before: Before1,
-      after: After1,
+      before: DomStarcaBefore,
+      after: DomStarcaAfter,
     },
     links: [
       {

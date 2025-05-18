@@ -1,5 +1,5 @@
 import './ServiceCardComponent.scss';
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ButtonComponent from "../button-component/ButtonComponent.tsx";
 import {BookA, MapPinned, Route} from "lucide-react";
 
@@ -12,11 +12,27 @@ interface ServiceCardComponentProps {
 }
 
 const ServiceCardComponent: React.FC<ServiceCardComponentProps> = ({ title, description, buttonText, moveTo, iconType }) => {
+  const [isconSize, setIconSize] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResizeIcon = () => {
+      if (window.innerWidth <= 480) {
+        setIconSize(100);
+      } else {
+        setIconSize(150);
+      }
+    };
+
+    handleResizeIcon();
+    window.addEventListener("resize", handleResizeIcon);
+    return () => window.removeEventListener("resize", handleResizeIcon);
+  }, [])
+
   const renderIcon = () => {
     switch (iconType) {
-      case "book" : return <BookA size="160" color="#DAA520" />;
-      case "map" : return <MapPinned size="160" color="#DAA520" />;
-      case "route" : return <Route size="160" color="#DAA520" />;
+      case "book" : return <BookA stroke-width="1.7" size={isconSize} color="#DAA520" />;
+      case "map" : return <MapPinned stroke-width="1.7" size={isconSize} color="#DAA520" />;
+      case "route" : return <Route stroke-width="1.7" size={isconSize} color="#DAA520" />;
     }
   }
   return (

@@ -43,14 +43,14 @@ const AboutProjectPage = () => {
               <ServiceCardComponent
                 title="Цифровой архив"
                 description="Изучайте историю каменного и деревянного зодчества в удобном и интересном формате"
-                moveTo="/pointsCatalog"
+                moveTo="/points"
                 buttonText="Открыть каталог"
                 iconType="book"
               />
               <ServiceCardComponent
                 title="Маршруты"
                 description="Тематические прогулки по историческим местам"
-                moveTo="/pointsCatalog"
+                moveTo="/routes"
                 buttonText="Выбрать маршрут"
                 iconType="map"
               />

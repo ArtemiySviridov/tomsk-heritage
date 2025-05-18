@@ -1,52 +1,49 @@
 import {Link, useLocation} from "react-router-dom";
 import './Header.scss';
+import {CircleDot, Route, Map, Info, UserRoundCheck } from "lucide-react";
+import {useEffect, useState} from "react";
 
 const Header = () => {
   const location = useLocation();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
+
+  const navLinks = [
+    { path: '/points', text: 'Точки', Icon: CircleDot },
+    { path: '/routes', text: 'Маршруты', Icon: Route },
+    { path: '/map', text: 'Карта', Icon: Map },
+    { path: '/', text: 'О проекте', Icon: Info },
+    { path: '/team', text: 'Команда', Icon: UserRoundCheck },
+  ]
 
   return (
     <div className="header">
       <nav className="header__nav">
-        <Link
-          to="/points"
-          className={`header__nav__link ${
-            location.pathname === "/points" ? "header__nav__link--active" : ""
-          }`}
-        >
-          Точки
-        </Link>
-        <Link
-          to="/routes"
-          className={`header__nav__link ${
-            location.pathname === "/routes" ? "header__nav__link--active" : ""
-          }`}
-        >
-          Маршруты
-        </Link>
-        <Link
-          to="/map"
-          className={`header__nav__link ${
-            location.pathname === "/map" ? "header__nav__link--active" : ""
-          }`}
-        >
-          Карта
-        </Link>
-        <Link
-          to="/"
-          className={`header__nav__link ${
-            location.pathname === "/" ? "header__nav__link--active" : ""
-          }`}
-        >
-          О проекте
-        </Link>
-        <Link
-          to="/team"
-          className={`header__nav__link ${
-            location.pathname === "/team" ? "header__nav__link--active" : ""
-          }`}
-        >
-          Команда
-        </Link>
+        { navLinks.map((link, index) => (
+          <Link
+            key={index}
+            to={link.path}
+            className={`header__nav__link ${
+              location.pathname === link.path ? "header__nav__link--active" : ""
+            }`}
+          >
+            { isMobile ? (
+              <link.Icon size={24}/>
+            ) : (
+              <div>{link.text}</div>
+            )}
+          </Link>
+        )) }
       </nav>
     </div>
   )
